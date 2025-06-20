@@ -1,6 +1,6 @@
 module github.com/jay7x/xk6-syslog
 
-go 1.24.3
+go 1.24.2
 
 require go.k6.io/k6 v1.0.0
 
