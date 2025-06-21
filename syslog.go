@@ -60,6 +60,7 @@ func (s *Syslog) Connect(address string, config Config) (*Connection, error) {
 		}
 
 		tlsCfg := &tls.Config{
+			// #nosec G402 - it's only true if it's explicitly set by user
 			InsecureSkipVerify: config.TLS.InsecureSkipVerify,
 			ServerName:         config.TLS.ServerName,
 		}
